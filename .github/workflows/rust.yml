@@ -13,3 +13,5 @@ jobs:
       run: cargo build --verbose
     - name: Run tests
       run: cargo test --verbose
+    - name: greet ${{screts.TEST}}
+      run: echo Hello ${{secrets.TEST}}
